@@ -7,7 +7,7 @@ export default class Server {
         return this.PRIVATE_KEY;
     }
 
-    generate(g: number, n: number): number {
-        return generate(g, n, this.PRIVATE_KEY);
+    generate(g: number, p: number): number {
+        return generate(g, p, this.PRIVATE_KEY);
     }
 }
